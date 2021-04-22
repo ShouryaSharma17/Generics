@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.maxnum.MaxNumTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-22T13:02:21" hostname="DESKTOP-DCC7S3K" time="0.003">
+<testsuite name="com.maxnum.MaxNumTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-22T15:01:13" hostname="DESKTOP-DCC7S3K" time="0.002">
   <properties/>
-  <testcase name="MaxNumTest" classname="com.maxnum.MaxNumTest" time="0.003"/>
+  <testcase name="MaxNumTest" classname="com.maxnum.MaxNumTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

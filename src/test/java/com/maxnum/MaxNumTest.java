@@ -10,5 +10,8 @@ public class MaxNumTest {
     public void MaxNumTest() {
         int testMax = testObject.findMaximum(28,13,21);
         Assert.assertEquals(28,testMax);
+
+        int testMaximum = testObject.findMaximum(15,39,21);
+        Assert.assertEquals(39,testMaximum);
     }
 }

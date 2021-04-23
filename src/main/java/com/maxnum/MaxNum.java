@@ -20,5 +20,14 @@ public class MaxNum {
 
         return thirdNum;
     }
+    public String findString( String firstString, String secondString, String thirdString) {
+        // Comparing String Values
+        if (firstString.compareTo(secondString) > 0 && firstString.compareTo(thirdString) > 0)
+            return firstString;
+        if (secondString.compareTo(thirdString) > 0)
+            return secondString;
+
+        return thirdString;
+    }
 }
 

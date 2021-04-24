@@ -30,5 +30,15 @@ public class MaxNum <E extends Comparable> {
         Collections.sort(testList);
         return testList.get(5);
     }
+    public void printMaximum(){
 
+        System.out.println("THE MAXIMUM OF :"+firstNum+" , "+secondNum+" , "+thirdNum+" , "+fourthNum+" , "+fifthNum+"  IS :");
+        System.out.println(findMaximumGeneric(firstNum,secondNum,thirdNum,fourthNum,fifthNum));
+
+    }
+
+    public static void main(String[] args) {
+        new MaxNum(15.2,15.3,15.4,15.1,15.11).printMaximum();
+        new MaxNum("Apple","Peach","Banana","Pea","Pear").printMaximum();
+    }
 }

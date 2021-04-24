@@ -1,24 +1,21 @@
 package com.maxnum;
 
 public class MaxNum {
-    public Integer findMax (Integer firstNum, Integer secondNum, Integer thirdNum) {
+    public Integer findMax(Integer firstNum, Integer secondNum, Integer thirdNum) {
         // Comparing one number with other using IF condition
         if (firstNum.compareTo(secondNum) > 0 && firstNum.compareTo(thirdNum) > 0)
             return firstNum;
-
         if (secondNum.compareTo(thirdNum) > 0)
             return secondNum;
         return thirdNum;
     }
-    public Double findMaximum(Double firstNum, Double secondNum, Double thirdNum) {
+    public Double findMaximum(Double firstFloat, Double secondFloat, Double thirdFloat) {
         // Comparing Float Values
-        if (firstNum.compareTo(secondNum) > 0 && firstNum.compareTo(thirdNum) > 0)
-            return firstNum;
-
-        if (secondNum.compareTo(thirdNum) > 0)
-            return secondNum;
-
-        return thirdNum;
+        if (firstFloat.compareTo(secondFloat) > 0 && firstFloat.compareTo(thirdFloat) > 0)
+            return firstFloat;
+        if (secondFloat.compareTo(thirdFloat) > 0)
+            return secondFloat;
+        return thirdFloat;
     }
     public String findString( String firstString, String secondString, String thirdString) {
         // Comparing String Values
@@ -26,8 +23,6 @@ public class MaxNum {
             return firstString;
         if (secondString.compareTo(thirdString) > 0)
             return secondString;
-
         return thirdString;
     }
 }
-

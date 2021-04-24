@@ -1,28 +1,23 @@
 package com.maxnum;
 
-public class MaxNum {
-    public Integer findMax(Integer firstNum, Integer secondNum, Integer thirdNum) {
-        // Comparing one number with other using IF condition
-        if (firstNum.compareTo(secondNum) > 0 && firstNum.compareTo(thirdNum) > 0)
-            return firstNum;
-        if (secondNum.compareTo(thirdNum) > 0)
-            return secondNum;
-        return thirdNum;
+public class MaxNum <E extends Comparable> {
+    E firstNum;
+    E secondNum;
+    E thirdNum;
+    public MaxNum( E firstNum, E secondNum, E thirdNum){
+        this.firstNum=firstNum;
+        this.secondNum=secondNum;
+        this.thirdNum=thirdNum;
     }
-    public Double findMaximum(Double firstFloat, Double secondFloat, Double thirdFloat) {
-        // Comparing Float Values
-        if (firstFloat.compareTo(secondFloat) > 0 && firstFloat.compareTo(thirdFloat) > 0)
-            return firstFloat;
-        if (secondFloat.compareTo(thirdFloat) > 0)
-            return secondFloat;
-        return thirdFloat;
+    public E genericMax(){
+        return findMaximumGeneric(firstNum, secondNum, thirdNum);
     }
-    public String findString( String firstString, String secondString, String thirdString) {
-        // Comparing String Values
-        if (firstString.compareTo(secondString) > 0 && firstString.compareTo(thirdString) > 0)
-            return firstString;
-        if (secondString.compareTo(thirdString) > 0)
-            return secondString;
-        return thirdString;
+    public static <E extends Comparable> E findMaximumGeneric( E firstNum, E secondNum, E thirdNum){
+        E position= firstNum;
+        if( secondNum.compareTo(position) > 0)
+            position= thirdNum;
+        if( thirdNum.compareTo(position) > 0)
+            position= secondNum;
+        return position;
     }
 }
